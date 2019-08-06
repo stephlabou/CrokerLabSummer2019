@@ -41,8 +41,8 @@ if (interactive()) {
                     mainPanel(
                       #tabset for plot, summary and table
                       tabsetPanel(
-                        tabPanel("Plot", plotlyOutput("plot",width = "100%",height = "600px"),uiOutput("color"),downloadButton('save_p', 'Save')), 
                         tabPanel("Table", dataTableOutput("table"),downloadButton('save_t', 'Save')),
+                        tabPanel("Plot", plotlyOutput("plot",width = "100%",height = "600px"),uiOutput("color"),downloadButton('save_p', 'Save')), 
                         tabPanel("Summary", tableOutput("summary"),downloadButton('save_s', 'Save'))
                       )
                     )#end of main panel
